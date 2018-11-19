@@ -1,0 +1,229 @@
+[ 2018-11-19T09:35:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000171s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T09:35:53+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T09:35:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002892s ]
+[ 2018-11-19T09:35:53+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T09:35:53+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.018612s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T09:35:53+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'agent' [ RunTime:0.000973s ]
+[ 2018-11-19T09:35:53+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'oil_agent' [ RunTime:0.000857s ]
+[ 2018-11-19T09:35:53+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'oil' AND table_name = 'oil_agent' ORDER BY ORDINAL_POSITION [ RunTime:0.005019s ]
+[ 2018-11-19T09:36:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000176s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T09:36:01+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T09:36:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004846s ]
+[ 2018-11-19T09:36:01+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T09:36:01+08:00 ][ info ] [ LANG ] C:\Work\Code\Oil\application\admin\lang/zh-cn.php
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.019464s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `oil_auth_rule` [ RunTime:0.005212s ]
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ SQL ] SELECT * FROM `oil_auth_rule` WHERE  `name` = 'agent' LIMIT 1 [ RunTime:0.000706s ]
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'agent' , 'Agent' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1542591361 , 1542591361) [ RunTime:0.002654s ]
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/index' LIMIT 1 [ RunTime:0.000562s ]
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/add' LIMIT 1 [ RunTime:0.000518s ]
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/edit' LIMIT 1 [ RunTime:0.000471s ]
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/del' LIMIT 1 [ RunTime:0.000540s ]
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/multi' LIMIT 1 [ RunTime:0.000529s ]
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 97 , 'agent/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1542591361 , 1542591361) [ RunTime:0.000601s ]
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 97 , 'agent/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1542591361 , 1542591361) [ RunTime:0.000271s ]
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 97 , 'agent/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1542591361 , 1542591361) [ RunTime:0.000260s ]
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 97 , 'agent/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1542591361 , 1542591361) [ RunTime:0.000228s ]
+[ 2018-11-19T09:36:01+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 97 , 'agent/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1542591361 , 1542591361) [ RunTime:0.000196s ]
+[ 2018-11-19T09:40:59+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000109s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T09:40:59+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T09:40:59+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005077s ]
+[ 2018-11-19T09:41:00+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T09:41:00+08:00 ][ info ] [ LANG ] C:\Work\Code\Oil\application\admin\lang/zh-cn.php
+[ 2018-11-19T09:41:00+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.009549s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T09:41:00+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `oil_auth_rule` [ RunTime:0.004658s ]
+[ 2018-11-19T09:41:00+08:00 ][ sql ] [ SQL ] SELECT * FROM `oil_auth_rule` WHERE  `name` = 'agent' LIMIT 1 [ RunTime:0.000684s ]
+[ 2018-11-19T09:41:00+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/index' LIMIT 1 [ RunTime:0.000602s ]
+[ 2018-11-19T09:41:00+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/add' LIMIT 1 [ RunTime:0.000538s ]
+[ 2018-11-19T09:41:00+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/edit' LIMIT 1 [ RunTime:0.000524s ]
+[ 2018-11-19T09:41:00+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/del' LIMIT 1 [ RunTime:0.000617s ]
+[ 2018-11-19T09:41:00+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/multi' LIMIT 1 [ RunTime:0.000548s ]
+[ 2018-11-19T09:41:00+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1542591660  WHERE  `id` = 98 [ RunTime:0.000537s ]
+[ 2018-11-19T09:41:00+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1542591660  WHERE  `id` = 99 [ RunTime:0.000326s ]
+[ 2018-11-19T09:41:00+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1542591660  WHERE  `id` = 100 [ RunTime:0.000341s ]
+[ 2018-11-19T09:41:00+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1542591660  WHERE  `id` = 101 [ RunTime:0.000312s ]
+[ 2018-11-19T09:41:00+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1542591660  WHERE  `id` = 102 [ RunTime:0.000304s ]
+[ 2018-11-19T09:52:07+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000185s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T09:52:07+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T09:52:07+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.014108s ]
+[ 2018-11-19T09:52:07+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T09:52:07+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.036907s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T09:52:07+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'agent' [ RunTime:0.000896s ]
+[ 2018-11-19T09:52:07+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'oil_agent' [ RunTime:0.000883s ]
+[ 2018-11-19T09:52:07+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'oil' AND table_name = 'oil_agent' ORDER BY ORDINAL_POSITION [ RunTime:0.005163s ]
+[ 2018-11-19T09:52:16+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000164s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T09:52:16+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T09:52:16+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005395s ]
+[ 2018-11-19T09:52:26+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000162s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T09:52:26+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T09:52:26+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005332s ]
+[ 2018-11-19T09:52:26+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T09:52:26+08:00 ][ info ] [ LANG ] C:\Work\Code\Oil\application\admin\lang/zh-cn.php
+[ 2018-11-19T09:52:26+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.019238s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T09:52:26+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `oil_auth_rule` [ RunTime:0.005412s ]
+[ 2018-11-19T09:52:26+08:00 ][ sql ] [ SQL ] SELECT * FROM `oil_auth_rule` WHERE  `name` = 'agent' LIMIT 1 [ RunTime:0.000597s ]
+[ 2018-11-19T09:52:26+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/index' LIMIT 1 [ RunTime:0.000539s ]
+[ 2018-11-19T09:52:26+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/add' LIMIT 1 [ RunTime:0.000589s ]
+[ 2018-11-19T09:52:26+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/edit' LIMIT 1 [ RunTime:0.000544s ]
+[ 2018-11-19T09:52:26+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/del' LIMIT 1 [ RunTime:0.000491s ]
+[ 2018-11-19T09:52:26+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/multi' LIMIT 1 [ RunTime:0.000569s ]
+[ 2018-11-19T09:52:26+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1542592346  WHERE  `id` = 98 [ RunTime:0.000615s ]
+[ 2018-11-19T09:52:26+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1542592346  WHERE  `id` = 99 [ RunTime:0.000324s ]
+[ 2018-11-19T09:52:26+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1542592346  WHERE  `id` = 100 [ RunTime:0.000307s ]
+[ 2018-11-19T09:52:26+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1542592346  WHERE  `id` = 101 [ RunTime:0.000289s ]
+[ 2018-11-19T09:52:26+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1542592346  WHERE  `id` = 102 [ RunTime:0.000321s ]
+[ 2018-11-19T10:02:30+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000178s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T10:02:30+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T10:02:30+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005226s ]
+[ 2018-11-19T10:02:35+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000334s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T10:02:35+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T10:02:35+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005205s ]
+[ 2018-11-19T10:02:35+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T10:02:35+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.019866s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T10:02:35+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'agent' [ RunTime:0.000885s ]
+[ 2018-11-19T10:02:35+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'oil_agent' [ RunTime:0.000874s ]
+[ 2018-11-19T10:02:35+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'oil' AND table_name = 'oil_agent' ORDER BY ORDINAL_POSITION [ RunTime:0.004873s ]
+[ 2018-11-19T10:02:39+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000175s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T10:02:39+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T10:02:39+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005350s ]
+[ 2018-11-19T10:02:39+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T10:02:39+08:00 ][ info ] [ LANG ] C:\Work\Code\Oil\application\admin\lang/zh-cn.php
+[ 2018-11-19T10:02:39+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.019518s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T10:02:39+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `oil_auth_rule` [ RunTime:0.004749s ]
+[ 2018-11-19T10:02:39+08:00 ][ sql ] [ SQL ] SELECT * FROM `oil_auth_rule` WHERE  `name` = 'agent' LIMIT 1 [ RunTime:0.000604s ]
+[ 2018-11-19T10:02:39+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/index' LIMIT 1 [ RunTime:0.000395s ]
+[ 2018-11-19T10:02:39+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/add' LIMIT 1 [ RunTime:0.000555s ]
+[ 2018-11-19T10:02:39+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/edit' LIMIT 1 [ RunTime:0.000546s ]
+[ 2018-11-19T10:02:39+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/del' LIMIT 1 [ RunTime:0.000555s ]
+[ 2018-11-19T10:02:39+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/multi' LIMIT 1 [ RunTime:0.000493s ]
+[ 2018-11-19T10:02:39+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1542592959  WHERE  `id` = 98 [ RunTime:0.000548s ]
+[ 2018-11-19T10:02:39+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1542592959  WHERE  `id` = 99 [ RunTime:0.000304s ]
+[ 2018-11-19T10:02:39+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1542592959  WHERE  `id` = 100 [ RunTime:0.000291s ]
+[ 2018-11-19T10:02:39+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1542592959  WHERE  `id` = 101 [ RunTime:0.000314s ]
+[ 2018-11-19T10:02:39+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1542592959  WHERE  `id` = 102 [ RunTime:0.000296s ]
+[ 2018-11-19T10:03:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000127s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T10:03:29+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T10:03:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005156s ]
+[ 2018-11-19T10:03:29+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T10:03:29+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.019371s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T10:03:29+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'agent' [ RunTime:0.000861s ]
+[ 2018-11-19T10:03:29+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'oil_agent' [ RunTime:0.000906s ]
+[ 2018-11-19T10:03:29+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'oil' AND table_name = 'oil_agent' ORDER BY ORDINAL_POSITION [ RunTime:0.004890s ]
+[ 2018-11-19T10:03:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000119s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T10:03:31+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T10:03:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005325s ]
+[ 2018-11-19T10:03:31+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T10:03:31+08:00 ][ info ] [ LANG ] C:\Work\Code\Oil\application\admin\lang/zh-cn.php
+[ 2018-11-19T10:03:31+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.018479s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T10:03:31+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `oil_auth_rule` [ RunTime:0.004701s ]
+[ 2018-11-19T10:03:31+08:00 ][ sql ] [ SQL ] SELECT * FROM `oil_auth_rule` WHERE  `name` = 'agent' LIMIT 1 [ RunTime:0.000643s ]
+[ 2018-11-19T10:03:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/index' LIMIT 1 [ RunTime:0.000536s ]
+[ 2018-11-19T10:03:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/add' LIMIT 1 [ RunTime:0.000560s ]
+[ 2018-11-19T10:03:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/edit' LIMIT 1 [ RunTime:0.000561s ]
+[ 2018-11-19T10:03:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/del' LIMIT 1 [ RunTime:0.000557s ]
+[ 2018-11-19T10:03:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/multi' LIMIT 1 [ RunTime:0.000561s ]
+[ 2018-11-19T10:03:31+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1542593011  WHERE  `id` = 98 [ RunTime:0.000616s ]
+[ 2018-11-19T10:03:31+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1542593011  WHERE  `id` = 99 [ RunTime:0.000298s ]
+[ 2018-11-19T10:03:31+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1542593011  WHERE  `id` = 100 [ RunTime:0.000272s ]
+[ 2018-11-19T10:03:31+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1542593011  WHERE  `id` = 101 [ RunTime:0.000286s ]
+[ 2018-11-19T10:03:31+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1542593011  WHERE  `id` = 102 [ RunTime:0.000253s ]
+[ 2018-11-19T10:05:04+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000114s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T10:05:04+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T10:05:04+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005170s ]
+[ 2018-11-19T10:05:04+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T10:05:04+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.019990s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T10:05:04+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'agent' [ RunTime:0.000888s ]
+[ 2018-11-19T10:05:04+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'oil_agent' [ RunTime:0.000906s ]
+[ 2018-11-19T10:05:04+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'oil' AND table_name = 'oil_agent' ORDER BY ORDINAL_POSITION [ RunTime:0.005199s ]
+[ 2018-11-19T10:05:06+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000120s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T10:05:06+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T10:05:06+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005524s ]
+[ 2018-11-19T10:05:06+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T10:05:06+08:00 ][ info ] [ LANG ] C:\Work\Code\Oil\application\admin\lang/zh-cn.php
+[ 2018-11-19T10:05:06+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.009459s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T10:05:06+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `oil_auth_rule` [ RunTime:0.004655s ]
+[ 2018-11-19T10:05:06+08:00 ][ sql ] [ SQL ] SELECT * FROM `oil_auth_rule` WHERE  `name` = 'agent' LIMIT 1 [ RunTime:0.000699s ]
+[ 2018-11-19T10:05:06+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/index' LIMIT 1 [ RunTime:0.000543s ]
+[ 2018-11-19T10:05:06+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/add' LIMIT 1 [ RunTime:0.000476s ]
+[ 2018-11-19T10:05:07+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/edit' LIMIT 1 [ RunTime:0.000559s ]
+[ 2018-11-19T10:05:07+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/del' LIMIT 1 [ RunTime:0.000604s ]
+[ 2018-11-19T10:05:07+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'agent/multi' LIMIT 1 [ RunTime:0.000549s ]
+[ 2018-11-19T10:05:07+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1542593107  WHERE  `id` = 98 [ RunTime:0.000595s ]
+[ 2018-11-19T10:05:07+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1542593107  WHERE  `id` = 99 [ RunTime:0.000274s ]
+[ 2018-11-19T10:05:07+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1542593107  WHERE  `id` = 100 [ RunTime:0.000298s ]
+[ 2018-11-19T10:05:07+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1542593107  WHERE  `id` = 101 [ RunTime:0.000297s ]
+[ 2018-11-19T10:05:07+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=97,`name`='agent/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1542593107  WHERE  `id` = 102 [ RunTime:0.000277s ]
+[ 2018-11-19T10:25:06+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000175s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T10:25:06+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T10:25:06+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005440s ]
+[ 2018-11-19T10:25:06+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T10:25:06+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.018962s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T10:25:06+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'apply_record' [ RunTime:0.000991s ]
+[ 2018-11-19T10:25:06+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'oil_apply_record' [ RunTime:0.000976s ]
+[ 2018-11-19T10:25:06+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'oil' AND table_name = 'oil_apply_record' ORDER BY ORDINAL_POSITION [ RunTime:0.004844s ]
+[ 2018-11-19T10:25:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000169s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T10:25:17+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T10:25:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005248s ]
+[ 2018-11-19T10:25:17+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T10:25:17+08:00 ][ info ] [ LANG ] C:\Work\Code\Oil\application\admin\lang/zh-cn.php
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.019786s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `oil_auth_rule` [ RunTime:0.005375s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] SELECT * FROM `oil_auth_rule` WHERE  `name` = 'apply' LIMIT 1 [ RunTime:0.000711s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'apply' , 'apply' , 'fa fa-list' , '' , 1 , 'normal' , 1542594317 , 1542594317) [ RunTime:0.002256s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] SELECT * FROM `oil_auth_rule` WHERE  `name` = 'apply/record' LIMIT 1 [ RunTime:0.000670s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (103 , 'apply/record' , '申请代理记录' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1542594317 , 1542594317) [ RunTime:0.001945s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'apply/record/index' LIMIT 1 [ RunTime:0.000512s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'apply/record/add' LIMIT 1 [ RunTime:0.000500s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'apply/record/edit' LIMIT 1 [ RunTime:0.000556s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'apply/record/del' LIMIT 1 [ RunTime:0.000557s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'apply/record/multi' LIMIT 1 [ RunTime:0.000538s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 104 , 'apply/record/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1542594317 , 1542594317) [ RunTime:0.000349s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 104 , 'apply/record/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1542594317 , 1542594317) [ RunTime:0.000188s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 104 , 'apply/record/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1542594317 , 1542594317) [ RunTime:0.000245s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 104 , 'apply/record/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1542594317 , 1542594317) [ RunTime:0.000232s ]
+[ 2018-11-19T10:25:17+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 104 , 'apply/record/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1542594317 , 1542594317) [ RunTime:0.000252s ]
+[ 2018-11-19T11:30:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000173s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T11:30:31+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T11:30:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005358s ]
+[ 2018-11-19T11:30:31+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T11:30:31+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.009612s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T11:30:31+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'apply_record' [ RunTime:0.001018s ]
+[ 2018-11-19T11:30:31+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'oil_apply_record' [ RunTime:0.000891s ]
+[ 2018-11-19T11:30:31+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'oil' AND table_name = 'oil_apply_record' ORDER BY ORDINAL_POSITION [ RunTime:0.005248s ]
+[ 2018-11-19T11:30:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000173s ]
+[ info ] [ LOG ] INIT File
+[ 2018-11-19T11:30:36+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-11-19T11:30:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006093s ]
+[ 2018-11-19T11:30:36+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-11-19T11:30:36+08:00 ][ info ] [ LANG ] C:\Work\Code\Oil\application\admin\lang/zh-cn.php
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.009516s ] mysql:host=127.0.0.1;dbname=oil;charset=utf8
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `oil_auth_rule` [ RunTime:0.004872s ]
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] SELECT * FROM `oil_auth_rule` WHERE  `name` = 'apply' LIMIT 1 [ RunTime:0.000656s ]
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] INSERT INTO `oil_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'apply' , 'apply' , 'fa fa-list' , '' , 1 , 'normal' , 1542598236 , 1542598236) [ RunTime:0.002568s ]
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] SELECT * FROM `oil_auth_rule` WHERE  `name` = 'apply/record' LIMIT 1 [ RunTime:0.000661s ]
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'apply/record/index' LIMIT 1 [ RunTime:0.000484s ]
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'apply/record/add' LIMIT 1 [ RunTime:0.000547s ]
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'apply/record/edit' LIMIT 1 [ RunTime:0.000544s ]
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'apply/record/del' LIMIT 1 [ RunTime:0.000530s ]
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `oil_auth_rule` WHERE  `name` = 'apply/record/multi' LIMIT 1 [ RunTime:0.000547s ]
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=104,`name`='apply/record/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1542598236  WHERE  `id` = 105 [ RunTime:0.000624s ]
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=104,`name`='apply/record/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1542598236  WHERE  `id` = 106 [ RunTime:0.000254s ]
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=104,`name`='apply/record/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1542598236  WHERE  `id` = 107 [ RunTime:0.000257s ]
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=104,`name`='apply/record/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1542598236  WHERE  `id` = 108 [ RunTime:0.000241s ]
+[ 2018-11-19T11:30:36+08:00 ][ sql ] [ SQL ] UPDATE `oil_auth_rule`  SET `pid`=104,`name`='apply/record/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1542598236  WHERE  `id` = 109 [ RunTime:0.000245s ]
